@@ -5,6 +5,19 @@ For this project, you will need the following tools:
 
 For local models, I recommend the [Ollama](https://ollama.com/) library.
 
+## Prerequisites
+
+Before cloning this repository and starting tests, ensure you have met the following prerequisites:
+
+- **OpenAI Account**: Necessary for using model-graded assertion types in this repository. We utilize GPT-4-turbo to grade the output of test cases.
+- **Node.js**: The `promptfoo` tool used in this repository operates on Node.js. Ensure Node.js is installed on your local machine.
+- **Environment Variables**: After setting up your OpenAI account, you should add your OpenAI key to an environment file. Refer to the `.env.example` file in this repository as a guide.
+- **Ollama Library**: For tasks that involve local models, such as those in the grammar improvement directory of this repo, the Ollama library is required. Download the necessary models, create the Ollama config, and then upload these configurations to your Ollama local instance. For more details, consult the Ollama documentation.
+- **Shell Script (Optional)**: There is a shell script available that automates the calling of use case numbers based on the stage of the engineering workflow. This is optional, as you can directly use the `promptfoo` CLI. If you opt to use the shell script, it can be executed directly by passing the use case number as the first parameter, e.g., `./run_eval.sh 1`.
+
+**Note**: This repository has been tested on **Ubuntu 22.04**. If you're using a different operating system and encounter issues, the shell script may not work as expected. Please feel free to open a pull request if you find a workaround or fix.
+
+
 ## Overview
 This guide aims to help developers and researchers craft prompts to achieve better outcomes from AI models, especially in scenarios where the nuanced wording of prompts plays a crucial role in the output generated. (which happens on smaller models)
 
