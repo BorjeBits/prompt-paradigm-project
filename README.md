@@ -49,7 +49,7 @@ Remember, not all models will interpret your instructions as intended. Smaller m
     
 8. **Finalize the Best Model, Temperature, and Base Prompt**: Conclude the process by selecting the best combination of model, temperature, and base prompt that suits your use case.
     
-9. **Evaluate the Need for Advanced Prompting Techniques**: In the final step, assess whether advanced prompting techniques (e.g., few-shot examples, system prompt variation, chain of thought) are necessary to enhance the AI checker's performance based on the latest model updates and testing results. See `use_case_5.yaml` and `base_winner.txt` for sample files.
+9. **Evaluate the Need for Advanced Prompting Techniques**: In the final step, assess whether advanced prompting techniques (e.g., few-shot examples, system prompt variation, chain of thought) are necessary to enhance the model's performance based on the latest model updates and testing results. See `use_case_5.yaml` and `base_winner.txt` for sample files.
 
 ### Practical Tips
 - Use larger models like GPT-4 for brainstorming or enhancing your prompts, as they have a better grasp of nuanced instructions.
