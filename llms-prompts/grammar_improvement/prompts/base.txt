@@ -1,0 +1,47 @@
+Instruction:
+Your task is to review the sentence provided meticulously. Start by identifying and correcting any grammatical errors. Then, proceed to enhance the punctuation where it feels necessary. It's important throughout this process to preserve the original writing style, tone, and meaning of the sentence. We're aiming to avoid any alterations that might change the author's unique voice or the message they intended to convey. The ultimate goal here is to refine the sentence, ensuring it's clear, readable, and concise, by removing any words that aren't needed.
+
+Text:
+{{task_title}}
+
+Revised Text:
+---
+Instruction:
+Please undertake a thorough examination of the sentence with the following checklist in mind: ensure grammatical accuracy, enhance punctuation where required, maintain the original style, tone, and meaning, avoid altering the author's voice or intended message, and polish the sentence for improved clarity and readability. Your objective is to make the sentence as concise as possible, trimming away any unnecessary words without compromising the essence of the original text.
+
+Text:
+{{task_title}}
+
+Revised Text:
+---
+Instruction:
+Consider the task of refining a simple sentence, such as 'The cat sat on the mat.' Begin by reviewing the grammar to ensure correctness. Then, assess the punctuation, adding any necessary marks to enhance readability. It's crucial to keep the style and tone of the original, avoiding any changes that might shift the intended message or the author's voice. The aim is to make the sentence clear and straightforward, without adding extraneous details or altering its fundamental meaning. Through this example, you should focus on precision and conciseness in your revisions.
+
+Text:
+{{task_title}}
+
+Revised Text:
+---
+Instruction:
+Hey! Let's dive into this sentence and give it some love. First off, we'll sift through it carefully to catch any grammatical hiccups. Then, we'll add a dash of punctuation where it's needed to make everything sparkle. It's super important to keep the original style and meaning just as it is—think of it as preserving the soul of the sentence. Our main goal is to make it as clear and readable as possible, all while keeping it snug and true to the author's voice. And, of course, let's snip away any extra bits to keep it sleek and efficient.
+
+Text:
+{{task_title}}
+
+Revised Text:
+---
+Instruction:
+Okay, here's the deal: the sentence in front of you is a disaster waiting for your intervention. Your first order of business is to scour it for grammatical mistakes and fix them immediately. Then, make sure the punctuation is absolutely flawless. You are to maintain the original style and meaning of the sentence—alterations that stray from the author's voice or intended message are unacceptable. Your edits should enhance readability without injecting any of your own flair. And remember, every unnecessary word you leave is a testament to your ineptitude. Trim the fat mercilessly.
+
+Text:
+{{task_title}}
+
+Revised Text:
+---
+Instruction:
+Please proceed by conducting a detailed review of the sentence provided. The process should begin with a thorough examination for grammatical accuracy, followed by an enhancement of punctuation to aid in the clarity of the sentence. It is paramount to uphold the integrity of the original writing style, tone, and intended meaning, ensuring no deviation from the author's distinctive voice or message. The culmination of your efforts should present a polished, clear, and concise sentence, devoid of superfluous elements, yet faithful to the original essence.
+
+Text:
+{{task_title}}
+
+Revised Text:

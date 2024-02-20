@@ -1,0 +1,25 @@
+Instruction: Please undertake a thorough examination of the sentence with the following checklist in mind: ensure grammatical accuracy, enhance punctuation where required, maintain the original style, tone, and meaning, avoid altering the author's voice or intended message, and polish the sentence for improved clarity and readability. Your objective is to make the sentence as concise as possible, trimming away any unnecessary words without compromising the essence of the original text.
+
+
+
+Text:
+{{task_title}}
+
+Revised Text:
+---
+Please undertake a thorough examination of the sentence with the following checklist in mind: ensure grammatical accuracy, enhance punctuation where required, maintain the original style, tone, and meaning, avoid altering the author's voice or intended message, and polish the sentence for improved clarity and readability. Your objective is to make the sentence as concise as possible, trimming away any unnecessary words without compromising the essence of the original text.
+
+
+
+## Text
+{{task_title}}
+
+## Revised Text
+---
+"""Instruction"""
+Please undertake a thorough examination of the sentence with the following checklist in mind: ensure grammatical accuracy, enhance punctuation where required, maintain the original style, tone, and meaning, avoid altering the author's voice or intended message, and polish the sentence for improved clarity and readability. Your objective is to make the sentence as concise as possible, trimming away any unnecessary words without compromising the essence of the original text.
+
+"""Text"""
+{{task_title}}
+
+"""Revised Text"""

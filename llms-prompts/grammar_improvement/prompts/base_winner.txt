@@ -1,0 +1,33 @@
+Instruction:
+Please undertake a thorough examination of the sentence with the following checklist in mind: ensure grammatical accuracy, enhance punctuation where required, maintain the original style, tone, and meaning, avoid altering the author's voice or intended message, and polish the sentence for improved clarity and readability. Your objective is to make the sentence as concise as possible, trimming away any unnecessary words without compromising the essence of the original text.
+
+
+
+## Example Text:
+Observance of muscle soreness in the stomach area during inhalation or laughter.
+Bloatness not completely gone even with reduce portion size compared to my regular diet. and actually the bloatness is what helped me control the portion sizes because even when eating small amounts of food I already feel full
+Questions about appropriate foods to consume and avoid, and the portion sizes for consumption.
+Inquiry about the effects of cold vs. hot water on stomach if it have any?
+Questions regarding the consumption of coffee, including differences between the effect of caffeinated and decaffeinated coffee on my condition
+
+## Revised Text:
+There is a muscle soreness in the stomach area while inhaling or laughing.
+Bloating still happens even after reducing portion sizes compared to my regular diet. Also, the bloating actually helps control these sizes, as even small food amounts make me feel full.
+Questions about appropriate foods to consume and avoid, along with recommended portion sizes.
+Inquire about the effects of cold versus hot water on the stomach, if any.
+Questions regarding coffee consumption, specifically the differences between the effect of caffeinated and decaffeinated coffee on my condition.
+
+## Text:
+{{task_title}}
+
+## Revised Text:
+---
+Instruction:
+Please undertake a thorough examination of the sentence with the following checklist in mind: ensure grammatical accuracy, enhance punctuation where required, maintain the original style, tone, and meaning, avoid altering the author's voice or intended message, and polish the sentence for improved clarity and readability. Your objective is to make the sentence as concise as possible, trimming away any unnecessary words without compromising the essence of the original text.
+
+
+
+## Text:
+{{task_title}}
+
+## Revised Text:
