@@ -1,0 +1,61 @@
+prompts:
+  - prompts/base_formats.txt
+
+providers:
+  - ollama:qwen15:latest:
+      config:
+        temperature: 0.5
+        seed: 0
+  - ollama:mistral:hermes:
+      config:
+        temperature: 0.5
+        seed: 0
+  - ollama:mistral:capy:
+      config:
+        temperature: 0.5
+        seed: 0
+  - ollama:openchat:q5:
+      config:
+        temperature: 0.5
+        seed: 0
+  - ollama:openchat_laser:q5:
+      config:
+        temperature: 0.5
+        seed: 0
+  - ollama:toppy:latest:
+      config:
+        temperature: 0.5
+        seed: 0
+
+defaultTest:
+  options:
+    rubricPrompt:
+      - role: system
+        content: >-
+          You are comparing multiple pieces of text to see which best fits the following criteria: {{criteria}}
+
+          Here is the input text:
+          {{ task_title }}
+
+          Here are the pieces of output text:
+          {% for output in outputs %}
+          <Text index="{{ loop.index0 }}">
+          {{ output }}
+          </Text>
+          {% endfor %}
+
+          Output the index of the text that best fits the criteria. You must output a single integer.
+  assert:
+    - type: select-best
+      provider: openai:gpt-4-turbo-preview
+      value: "choose best output that is clear and concise and have the same meaning as the original input. I will give more point to output that has the same tone and writing style as the input but not grammatical issues"
+
+
+tests:
+  - vars:
+      task_title: here are my updates for today i did mostly check our jira tickets that are still assigned to me and cleaned up most of it since most uh some of them are already done and some are already invalid and some are for clarification which i listed on the channel and then for the dashboard i created initially the dashboard for trino and counter check it if it has the correct values by trying to do a query to our trino server uh next is i checked the issue reported last week about the high block meta store and check what could be the possible issue
+  - vars:
+      task_title: closing this one seems it's not necessary anymore as we are mostly comfortable using the commands of helmfile directly
+    assert:
+  - vars:
+      task_title: some factors to decide for the refactoring so the first one is we should only have a minimal number of fields per command plugin so it's easier to maintain so it should have the run command and the run command should have only a single single input which is the input string passed by the transcription server as for the extraction let's just put that per we could either put it per command or maybe a middleware to check if the command intent requires a parameter and let the llm extract it and then pass
