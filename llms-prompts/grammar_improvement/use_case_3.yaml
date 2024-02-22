@@ -2,27 +2,23 @@ prompts:
   - prompts/base_formats.txt
 
 providers:
-  - ollama:qwen15:latest:
+  - ollama:starling_alpha:local:
       config:
         temperature: 0.5
         seed: 0
-  - ollama:mistral:hermes:
+  - ollama:open_chat:local:
       config:
         temperature: 0.5
         seed: 0
-  - ollama:mistral:capy:
+  - ollama:hermes_solar:local:
       config:
         temperature: 0.5
         seed: 0
-  - ollama:openchat:q5:
+  - ollama:hermes_mistral:local:
       config:
         temperature: 0.5
         seed: 0
-  - ollama:openchat_laser:q5:
-      config:
-        temperature: 0.5
-        seed: 0
-  - ollama:toppy:latest:
+  - ollama:hermes_dpo:local:
       config:
         temperature: 0.5
         seed: 0
@@ -49,7 +45,6 @@ defaultTest:
     - type: select-best
       provider: openai:gpt-4-turbo-preview
       value: "choose best output that is clear and concise and have the same meaning as the original input. I will give more point to output that has the same tone and writing style as the input but not grammatical issues"
-
 
 tests:
   - vars:
