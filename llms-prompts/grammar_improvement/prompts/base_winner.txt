@@ -3,19 +3,14 @@ Please undertake a thorough examination of the sentence with the following check
 
 
 
-## Example Text:
-Observance of muscle soreness in the stomach area during inhalation or laughter.
-Bloatness not completely gone even with reduce portion size compared to my regular diet. and actually the bloatness is what helped me control the portion sizes because even when eating small amounts of food I already feel full
-Questions about appropriate foods to consume and avoid, and the portion sizes for consumption.
-Inquiry about the effects of cold vs. hot water on stomach if it have any?
-Questions regarding the consumption of coffee, including differences between the effect of caffeinated and decaffeinated coffee on my condition
+## Text
+Due to the findings above, I did check some workarounds that we could do. The first one is there is a parameter for trino to make query wait for minimum number of workers before it starts. But currently we can't use that because we're scaling the number of workers based on CPU usage. And if we are blocking any task, If we are blocking any task to execute in the worker, then the CPU usage won't really increase and autoscaling won't kick in
+I did check if we increase the sensitivity of scaling if that would help but it doesn't help so the number of initial workers during the query execution is important compared so even if the cluster like creates workers like in just 30 seconds upon the first query. That wouldn't work because the query planning stage of trino already has been finished during that time.
 
 ## Revised Text:
-There is a muscle soreness in the stomach area while inhaling or laughing.
-Bloating still happens even after reducing portion sizes compared to my regular diet. Also, the bloating actually helps control these sizes, as even small food amounts make me feel full.
-Questions about appropriate foods to consume and avoid, along with recommended portion sizes.
-Inquire about the effects of cold versus hot water on the stomach, if any.
-Questions regarding coffee consumption, specifically the differences between the effect of caffeinated and decaffeinated coffee on my condition.
+Based on the findings, I checked for potential solutions. The first option is a parameter for Trino to delay queries until there are enough workers available. However, we cannot use this currently as we scale worker numbers based on CPU usage. If tasks are blocked from executing in a worker, CPU usage will not increase, and auto-scaling won't initiate.
+
+I also investigated increasing the sensitivity of scaling but found it to be ineffective. Even if the cluster rapidly creates workers within 30 seconds after the first query, this wouldn't work because Trino's query planning stage would have already completed by then.
 
 ## Text:
 {{task_title}}
